@@ -1,0 +1,15 @@
+common: &common
+  adapter: postgresql
+  username: root
+  password:
+  database:
+  pool: 30
+  timeout: 5000
+
+development:
+  <<: *common
+  database: money_service_development
+
+production:
+  <<: *common
+  database: money_service_production
