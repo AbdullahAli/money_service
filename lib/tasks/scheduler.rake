@@ -1,6 +1,6 @@
 desc "fetch money exhchange rate"
 
-task :do_everything => :environment do
+task :do_everything do
   # fetch the rates
   FetchRates.go
 
