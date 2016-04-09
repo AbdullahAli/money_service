@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 gem 'protected_attributes'
 gem 'nokogiri'
 gem 'pg'
+gem 'mail'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
