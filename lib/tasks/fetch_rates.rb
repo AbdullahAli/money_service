@@ -10,6 +10,7 @@ class FetchRates
         result = doc.css(RATE_CSS_PATH).text
         rate = RATE_REGEX.match(result)[1]
 
+        Rails.logger.info("fetched new rate...")
         ExchangeRate.create!(rate: rate)
     end
 end
